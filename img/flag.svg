@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" width="100%" height="100%">
+  <!-- Franja Superior: Azul Oscuro -->
+  <rect width="300" height="66.67" fill="#10335e" />
+  
+  <!-- Franja Central: Dorado/Amarillo -->
+  <rect y="66.67" width="300" height="66.67" fill="#caa022" />
+  
+  <!-- Franja Inferior: Verde -->
+  <rect y="133.33" width="300" height="66.67" fill="#1d633b" />
+</svg>
