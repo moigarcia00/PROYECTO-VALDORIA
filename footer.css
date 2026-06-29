@@ -1,6 +1,8 @@
 .footer {
-  background-color: #1A365D;
+   background-color: #10335e;
   padding: 24px 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
 }
 
 .footer__container {
