@@ -95,19 +95,18 @@
 
 .sessionFlag .flagElements li.sun-element {
   margin-top: 25px;
-  padding-left: 30px; 
+  padding-left: 30px;
 }
 
 .sessionFlag .flagElements li.sun-element::before {
   content: "☀️";
   position: absolute;
   left: 0;
-  top: -2px; 
-  font-size: 1.1rem; 
+  top: -2px;
+  font-size: 1.1rem;
   color: #d69e2e;
 }
 
-/* Textos internos de la lista */
 .sessionFlag .flagElements h3 {
   display: inline;
   font-size: 1rem;
@@ -120,7 +119,6 @@
   font-style: italic;
   margin: 0;
 }
-
 
 
 .coatArms {
@@ -177,9 +175,6 @@
 }
 
 
-/* ==========================================================
-   4. SECCIÓN 3: HIMNO NACIONAL (Video transparente)
-   ========================================================== */
 .valdoriaNationalAnthem {
   display: flex;
   align-items: flex-start;
@@ -188,16 +183,25 @@
 
 .valdoriaNationalAnthem .valdoriaAnthemVideo {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px; 
   background-color: transparent;
-  display: block;
 }
 
-.valdoriaNationalAnthem .videoPlayer {
+
+.valdoriaNationalAnthem .anthemPoster {
   width: 100%;
   height: auto;
-  aspect-ratio: 3 / 4;
+  aspect-ratio: 4 / 3; 
   object-fit: cover;
   border-radius: 4px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06); 
+}
+
+
+.valdoriaNationalAnthem .audioPlayer {
+  width: 100%;
 }
 
 .valdoriaNationalAnthem .valdoriaAnthemElements {
