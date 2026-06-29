@@ -1,0 +1,186 @@
+.sessionFlag,
+.coatArms,
+.valdoriaNationalAnthem {
+  max-width: 800px;
+  margin: 50px auto;
+  font-family: Arial, sans-serif;
+  color: #333333;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+
+.flagElements h1,
+.coatArmsElements h2,
+.valdoriaAnthemElements h2 {
+  color: #000000;
+  font-weight: normal;
+  margin-top: 0;
+}
+
+.flagElements h1 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-align: left;
+}
+.coatArmsElements h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+.valdoriaAnthemElements h2 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* ==========================================
+   SECCIÓN 1: BANDERA
+   ========================================== */
+.sessionFlag {
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
+  gap: 40px;
+}
+
+.sessionFlag .flag {
+  flex: 1;
+}
+
+.sessionFlag .flag img {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  display: block;
+}
+
+.sessionFlag .flagElements {
+  flex: 1.2;
+}
+
+.sessionFlag .flagElements ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sessionFlag .flagElements li {
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+}
+
+.sessionFlag .flagElements h3 {
+  display: inline;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.sessionFlag .flagElements p {
+  display: inline;
+  font-style: italic;
+  margin: 0;
+}
+
+/* ==========================================
+   SECCIÓN 2: ESCUDO (Alineación corregida con Grid)
+   ========================================== */
+.coatArms {
+  display: grid;
+  /* El texto de la izquierda hereda el tamaño 1.3 y la imagen de la derecha el 0.9 */
+  grid-template-columns: 1.3fr 0.9fr; 
+  grid-template-areas: 
+    "texto imagen"
+    "lema imagen";
+  gap: 20px 40px; /* Reducido el espacio vertical para controlar el bloque azul */
+}
+
+/* Enviamos cada elemento a su coordenada correspondiente */
+.coatArms div:first-child {
+  grid-area: imagen;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.coatArms div:first-child img {
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+  display: block;
+}
+
+.coatArms .coatArmsElements {
+  grid-area: texto;
+}
+
+.coatArms .coatArmsElements p {
+  font-size: 0.95rem;
+  text-align: justify;
+  margin: 0;
+}
+
+/* El bloque azul ahora se alinea perfectamente con el texto izquierdo */
+.coatArms .BordertextCoatArms {
+  grid-area: lema; 
+  background-color: #1a365d;
+  color: #ffffff;
+  padding: 20px;
+}
+
+.coatArms .BordertextCoatArms h2 {
+  color: #ffffff;
+  font-size: 1.4rem;
+  margin: 0 0 10px 0;
+  font-family: Georgia, serif;
+}
+
+.coatArms .BordertextCoatArms p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #e2e8f0;
+}
+
+/* ==========================================
+   SECCIÓN 3: HIMNO
+   ========================================== */
+.valdoriaNationalAnthem {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.valdoriaNationalAnthem .valdoriaAnthemVideo {
+  flex: 1;
+  background-color: transparent;
+  display: block;
+}
+
+.valdoriaNationalAnthem .videoPlayer {
+  width: 100%;
+  height: auto; 
+  aspect-ratio: 3 / 4; 
+  object-fit: cover;
+  border-radius: 4px; 
+}
+
+.valdoriaNationalAnthem .valdoriaAnthemElements {
+  flex: 1.3;
+}
+
+.valdoriaNationalAnthem .valdoriaAnthemElements p:first-of-type {
+  font-style: italic;
+  color: #777777;
+  margin-bottom: 25px;
+}
+
+.valdoriaNationalAnthem .valdoriaAnthemElements h3 {
+  font-size: 1.05rem;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.valdoriaNationalAnthem .valdoriaAnthemElements p {
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
