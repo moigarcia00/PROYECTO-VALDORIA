@@ -1,0 +1,13 @@
+.TextContainer      {
+                      width: 680px;
+                      height: 500px;
+                      background-color: gainsboro;
+                    }
+.languaje           {
+                      background-color: beige;
+                      border: 1px solid;                     
+                    }
+.innerConteiner     {
+                        width: 650px;
+                       
+                    }
