@@ -1,0 +1,26 @@
+.footer {
+  background-color: #1A365D;
+  padding: 24px 16px;
+}
+
+.footer__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer__copy {
+  color: #FFFFFF;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  margin: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
