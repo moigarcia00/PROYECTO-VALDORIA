@@ -1,0 +1,200 @@
+
+.titulo {
+  text-align: center;
+  padding-top: 40px;   
+  margin-top: 0;       
+  margin-bottom: 40px; 
+}
+
+.titulo h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0 0 5px 0;
+}
+
+.sub-top {
+  font-style: italic;
+  color: #333333;
+  font-size: 16px;
+  margin: 0;
+}
+
+.sections {
+  display: flex;
+  justify-content: center;
+  align-items: stretch; 
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.column-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.TextContainer {
+  background-color: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  padding: 35px 40px;
+  width: 500px;
+  box-sizing: border-box;
+}
+
+.constitution-card {
+  width: 540px;
+  display: flex;
+  flex-direction: column; 
+  box-sizing: border-box;
+}
+
+.constitution-card .section-header {
+  margin-top: auto; 
+  margin-bottom: 15px;
+}
+
+.constitution-card .box {
+  margin-bottom: auto; 
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.header-icon {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.section-header h2 {
+  font-size: 24px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.descripcion {
+  font-size: 15px;
+  line-height: 1.4;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.constitution-desc {
+  font-style: italic;
+  font-size: 14px;
+  color: #444;
+}
+
+.checklist {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.checklist li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 12px;
+  font-size: 15px;
+}
+
+.checklist li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #0f8a5f;
+  font-weight: bold;
+  background-color: #e6f4ea;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+}
+
+.languaje {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.languaje h3 {
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.languaje ul {
+  padding-left: 15px;
+  margin-bottom: 15px;
+}
+
+.languaje li {
+  font-size: 13.5px;
+  margin-bottom: 6px;
+}
+
+.alphabet-note {
+  font-size: 13px;
+  color: #555;
+  margin: 0;
+  font-style: italic;
+}
+
+.ley-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 35px;
+}
+
+.ley {
+  background-color: #e0e0e0;
+  padding: 10px 15px;
+  border-radius: 2px;
+}
+
+.ley p {
+  margin: 0;
+  font-size: 16px;
+  font-style: italic;
+}
+
+.derechos-titulo {
+  font-size: 18px;
+  font-weight: normal;
+  font-style: italic;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.duty {
+  background-color: #f1f1f1;
+  width: calc(50% - 6px); 
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.duty p {
+  margin: 0;
+  font-size: 15px;
+  font-style: italic;
+}
