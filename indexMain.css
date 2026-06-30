@@ -1,0 +1,227 @@
+
+.sessionFlag,
+.coatArms,
+.valdoriaNationalAnthem {
+  max-width: 800px;
+  margin: 50px auto;
+  font-family: Arial, sans-serif;
+  color: #333333;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+
+.flagElements h1,
+.coatArmsElements h2,
+.valdoriaAnthemElements h2 {
+  color: #000000;
+  font-weight: normal;
+  margin-top: 0;
+}
+
+.flagElements h1 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.coatArmsElements h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.valdoriaAnthemElements h2 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+
+.sessionFlag {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+}
+
+.sessionFlag .flag {
+  flex: 1;
+}
+
+.sessionFlag .flag img {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  display: block;
+}
+
+.sessionFlag .flagElements {
+  flex: 1.2;
+}
+
+.sessionFlag .flagElements ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sessionFlag .flagElements li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+}
+
+.sessionFlag .flagElements li:not(.sun-element):not(:last-child)::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 3px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+
+.sessionFlag .flagElements li:nth-child(1)::before {
+  background-color: #1a365d;
+}
+
+.sessionFlag .flagElements li:nth-child(2)::before {
+  background-color: #d69e2e;
+}
+
+.sessionFlag .flagElements li:nth-child(3)::before {
+  background-color: #276749;
+}
+
+.sessionFlag .flagElements li.sun-element {
+  margin-top: 25px;
+  padding-left: 30px;
+}
+
+.sessionFlag .flagElements li.sun-element::before {
+  content: "☀️";
+  position: absolute;
+  left: 0;
+  top: -2px;
+  font-size: 1.1rem;
+  color: #d69e2e;
+}
+
+.sessionFlag .flagElements h3 {
+  display: inline;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.sessionFlag .flagElements p {
+  display: inline;
+  font-style: italic;
+  margin: 0;
+}
+
+
+.coatArms {
+  display: grid;
+  grid-template-columns: 1.3fr 0.9fr;
+  grid-template-areas:
+    "texto imagen"
+    "lema imagen";
+  gap: 20px 40px;
+}
+
+.coatArms div:first-child {
+  grid-area: imagen;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.coatArms div:first-child img {
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+  display: block;
+}
+
+.coatArms .coatArmsElements {
+  grid-area: texto;
+}
+
+.coatArms .coatArmsElements p {
+  font-size: 0.95rem;
+  text-align: justify;
+  margin: 0;
+}
+
+.coatArms .BordertextCoatArms {
+  grid-area: lema;
+  background-color: #1a365d;
+  color: #ffffff;
+  padding: 20px;
+}
+
+.coatArms .BordertextCoatArms h2 {
+  color: #ffffff;
+  font-size: 1.4rem;
+  margin: 0 0 10px 0;
+  font-family: Georgia, serif;
+}
+
+.coatArms .BordertextCoatArms p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #e2e8f0;
+}
+
+
+.valdoriaNationalAnthem {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.valdoriaNationalAnthem .valdoriaAnthemVideo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px; 
+  background-color: transparent;
+}
+
+
+.valdoriaNationalAnthem .anthemPoster {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3; 
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06); 
+}
+
+
+.valdoriaNationalAnthem .audioPlayer {
+  width: 100%;
+}
+
+.valdoriaNationalAnthem .valdoriaAnthemElements {
+  flex: 1.3;
+}
+
+.valdoriaNationalAnthem .valdoriaAnthemElements p:first-of-type {
+  font-style: italic;
+  color: #777777;
+  margin-bottom: 25px;
+}
+
+.valdoriaNationalAnthem .valdoriaAnthemElements h3 {
+  font-size: 1.05rem;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.valdoriaNationalAnthem .valdoriaAnthemElements p {
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
