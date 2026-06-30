@@ -1,63 +1,192 @@
-body                {
-                      font-family: Arial, sans-serif;
-                    }
-.TextContainer      {
-                      width: 680px;
-                      height: 620px;
-                      background-color: gainsboro;
-                      padding-left: 40px;
-                    }
-.languaje           {
-                      background-color: #F2F2F2;
-                      padding-left: 10px;
-                      padding-bottom: 1px;
-                      width: 630px;
-                      height: 180px;                     
-                    }
-.innerConteiner     {
-                        width: 650px;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f5f9; /* Fondo grisáceo claro de toda la página */
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
 
-                    }
-.sections           {
-                      display: flex;
-                      gap: 30px;
-                    }
-.titulo             {
-                      text-align: center;
-                    }
-.img                 {
-                      width: 27px;
-                      height: 27px;
-                      display: flex;
-                      position: relative;
-                      right: 32px;
-                      top: 52px;                   
-                    }
-.ley                {
-                      background-color: #A6A6A6;
-                      width: 400px;
-                      height: 28px;
-                      display: block;
-                      font-size: 20px;
-                    }
-.duty               {
-                      background-color: #F7F5F5;
-                      width: 300px;
-                      height: 28px;
-                      display: flex;
-                      align-items: center;
-                      padding-left: 10px;
-                      box-sizing: border-box;
-                      border-radius: 20px;
-                      font-size: 20px;
-                      justify-content: center;  
-                      text-align: center;   
-                      
-                    }
-.box                {
-                      display: flex;
-                      flex-wrap: wrap;
-                      gap: 10px;
-                      width: 820px;
-                      
-                    }
+.titulo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.sub-top {
+  font-style: italic;
+  color: #555;
+  font-size: 16px;
+}
+
+/* Contenedor de las dos secciones principales */
+.sections {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Envoltura para las dos tarjetas de la izquierda */
+.column-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* Tarjetas Blancas Contenedoras */
+.TextContainer {
+  background-color: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  padding: 35px 40px;
+  width: 500px; /* Ajustado para que no se desborden elementos */
+  box-sizing: border-box;
+}
+
+/* Forzar que la tarjeta de la derecha se estire a la par si se requiere */
+.constitution-card {
+  width: 540px;
+}
+
+/* Alineación de cabeceras (Icono + Título) */
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.header-icon {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.section-header h2 {
+  font-size: 24px;
+  margin: 0;
+  font-weight: bold;
+}
+
+/* Descripciones generales */
+.descripcion {
+  font-size: 15px;
+  line-height: 1.4;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.constitution-desc {
+  font-style: italic;
+  font-size: 14px;
+  color: #444;
+}
+
+.checklist {
+  list-style: none;
+  padding-left: 0;
+}
+
+.checklist li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 12px;
+  font-size: 15px;
+}
+
+.checklist li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #0f8a5f;
+  font-weight: bold;
+  background-color: #e6f4ea;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+}
+
+
+.languaje {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.languaje h3 {
+  font-size: 14px;
+  margin-top: 0;
+  font-style: italic;
+}
+
+.languaje ul {
+  padding-left: 15px;
+  margin-bottom: 15px;
+}
+
+.languaje li {
+  font-size: 13.5px;
+  margin-bottom: 6px;
+}
+
+.alphabet-note {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 0;
+  font-style: italic;
+}
+
+
+.ley-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 35px;
+}
+
+.ley {
+  background-color: #e0e0e0; 
+  padding: 10px 15px;
+  border-radius: 2px;
+}
+
+.ley p {
+  margin: 0;
+  font-size: 16px;
+  font-style: italic;
+}
+
+/* Bloque de Derechos (Píldoras) */
+.derechos-titulo {
+  font-size: 18px;
+  font-weight: normal;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.duty {
+  background-color: #f1f1f1;
+  width: calc(50% - 6px); /* Divide perfectamente en 2 columnas restando el gap */
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.duty p {
+  margin: 0;
+  font-size: 15px;
+  font-style: italic;
+}
