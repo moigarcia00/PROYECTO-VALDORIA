@@ -1,8 +1,7 @@
 .footer {
-   background-color: #10335e;
+  background-color: #10335e;
   padding: 24px 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-
 }
 
 .footer__container {
@@ -12,17 +11,11 @@
 }
 
 .footer__copy {
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 0.85rem;
   line-height: 1.6;
   margin: 0;
 }
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
 main {
   flex: 1;
 }
