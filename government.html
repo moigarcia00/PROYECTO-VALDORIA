@@ -3,25 +3,140 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link rel="stylesheet" href="nav.css" />
+    <link rel="stylesheet" href="government.css" />
+    <link rel="stylesheet" href="footer.css" />
     <title>República de Valdoria</title>
   </head>
+
   <body>
     <header>
       <section class="nav-container">
-		<img src="img/flag.svg" alt="Tricolor flag">
+        <img src="img/flag.svg" alt="Tricolor flag" />
         <nav class="my-navigation">
           <ul class="nav-links">
             <li><a href="index.html">Identidad</a></li>
             <li><a href="geography.html">Geografía</a></li>
+            <li><a href="government.html">Gobierno</a></li>
             <li><a href="economy.html">Economía</a></li>
             <li><a href="culture.html">Cultura</a></li>
           </ul>
         </nav>
       </section>
     </header>
-    <main></main>
-    <footer></footer>
+
+    <main>
+      <div class="titulo">
+        <h1>Gobierno, Leyes y Sociedad</h1>
+        <p class="sub-top">Una república con raíces cívicas profundas</p>
+      </div>
+
+      <div class="sections">
+        <div class="column-wrapper">
+          <section class="TextContainer">
+            <div class="section-header">
+              <img
+                src="img/IconPolitical.png"
+                alt="Icono político"
+                class="header-icon"
+              />
+              <h2>Sistema Político</h2>
+            </div>
+            <div class="innerContainer">
+              <p class="descripcion">
+                Valdoria es una república presidencialista democrática. El
+                presidente es elegido cada 5 años por voto universal directo. El
+                poder legislativo recae en la Asamblea Nacional bicameral
+                (Senado y Cámara de Diputados). La Corte Suprema garantiza la
+                independencia judicial.
+              </p>
+              <ul class="checklist">
+                <li>Separación de poderes</li>
+                <li>Elecciones libres y periódicas</li>
+                <li>Estado de derecho</li>
+                <li>Libertad de prensa</li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="TextContainer">
+            <div class="section-header">
+              <img
+                src="img/iconLanguaje.png"
+                alt="Icono idioma"
+                class="header-icon"
+              />
+              <h2>Idioma Oficial</h2>
+            </div>
+            <div class="innerContainer">
+              <p class="descripcion">
+                Valdoriano: Lengua romance derivada del latín costero, oficial
+                desde 1847.
+              </p>
+              <div class="languaje">
+                <h3>Palabras propias del idioma:</h3>
+                <ul>
+                  <li><em>Valdora: Patria, tierra natal.</em></li>
+                  <li>
+                    <em>Solcrest: Amanecer (literalmente “cresta del Sol”).</em>
+                  </li>
+                  <li><em>Marvent: Brisa del mar.</em></li>
+                  <li><em>Unitad: Unión, hermandad cívica.</em></li>
+                </ul>
+                <p class="alphabet-note">
+                  Alfabeto latino con 28 letras (incluye la Ñ y la Ü
+                  valdoriana).
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <section class="TextContainer constitution-card">
+          <div class="section-header">
+            <img
+              src="img/iconConstitution.png"
+              alt="Icono constitución"
+              class="header-icon"
+            />
+            <h2>Constitución Básica</h2>
+          </div>
+          <p class="descripcion constitution-desc">
+            Las 5 leyes fundamentales de la República de Valdoria de 1847
+            (reformada en 1992):
+          </p>
+
+          <div class="ley-container">
+            <div class="ley"><p>Ley I - Dignidad Humana</p></div>
+            <div class="ley"><p>Ley II - Libertad de expresión</p></div>
+            <div class="ley"><p>Ley III - Educación Gratuita</p></div>
+            <div class="ley"><p>Ley IV - Protección Ambiental</p></div>
+            <div class="ley"><p>Ley V - Debido Proceso</p></div>
+          </div>
+
+          <h3 class="derechos-titulo">
+            Derechos principales de los ciudadanos
+          </h3>
+
+          <div class="box">
+            <div class="duty"><p>Voto universal</p></div>
+            <div class="duty"><p>Salud pública</p></div>
+            <div class="duty"><p>Libertad religiosa</p></div>
+            <div class="duty"><p>Propiedad pública</p></div>
+            <div class="duty"><p>Huelga y sindicato</p></div>
+            <div class="duty"><p>Asilo político</p></div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <p class="footer__copy">
+          © 2026 Nova Code. Todos los derechos reservados. Diseñado y
+          desarrollado por el equipo de Nova Code.
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
